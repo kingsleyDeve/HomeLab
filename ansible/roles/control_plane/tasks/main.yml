@@ -1,0 +1,6 @@
+---
+- name: Télécharger et installer K3s en mode serveur avec cluster-init
+  shell: |
+    curl -sfL https://get.k3s.io | K3S_TOKEN={{ k3s_token }} sh -s - server --cluster-init
+  args:
+    creates: /etc/systemd/system/k3s.service

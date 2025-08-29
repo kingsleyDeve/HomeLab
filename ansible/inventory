@@ -1,0 +1,14 @@
+[control_plane]
+k3s-pve1-master ansible_host=192.168.10.90
+k3s-pve2-master ansible_host=192.168.10.144
+k3s-pve3-master ansible_host=192.168.10.236
+
+[workers]
+k3s-pve1-worker ansible_host=192.168.10.231
+k3s-pve2-worker ansible_host=192.168.10.155
+k3s-pve3-worker ansible_host=192.168.10.23
+
+[all:vars]
+ansible_user=king
+ansible_become=true
+ansible_ssh_private_key_file=~/.ssh/id_rsa

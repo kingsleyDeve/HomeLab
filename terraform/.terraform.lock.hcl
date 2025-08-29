@@ -1,0 +1,43 @@
+# This file is maintained automatically by "terraform init".
+# Manual edits may be lost in future updates.
+
+provider "registry.terraform.io/hashicorp/vault" {
+  version = "5.2.1"
+  hashes = [
+    "h1:gM2a6A1klQ6+iaV9eP+XRe/wYOwI0eY6Z553Zaa2x7w=",
+    "zh:18c356ee1d67e097ce03a35c8b80433c27ab04674d2cd911a388e05c55ceced0",
+    "zh:313a0a7453268855bdfeb4c682f73a731daee6bdbcc666a5571be8682b6b6946",
+    "zh:377b18e10808d70ef6625f1d92ffc3777b07d2f1c9cb5a9c0e4ea583623cef36",
+    "zh:3ccb6b5fe6db397567f395ccc2800d97c4afea9c92cef5486449b17f36178214",
+    "zh:51d1945fc1041fef616ee2ca70c3d029c15a5a54f3bb7f1319715a3d6d69cd69",
+    "zh:5522411faa3f08304c64e49d5d1f009460adbe5ee4b7cb2a02e5a693cf0eac47",
+    "zh:77b664062989d2d9158455eebbea740576a6c8d32c8492f24c49da5719607b22",
+    "zh:78d5eefdd9e494defcb3c68d282b8f96630502cac21d1ea161f53cfe9bb483b3",
+    "zh:80bbd259256128886f2f5dbfd9459665fc3655eb0a8060f5ec9ff6daaaa5d26a",
+    "zh:8b1cfa121b8011bd7adaf6417c609f55fd43cfda6fa3e627cc6514978b119b16",
+    "zh:bd1aaa93f630b353fd413026bed9a527a442ee3a9740cdd485b2536b54bca774",
+    "zh:fd1138abeee0ace03285ac5c1ca88e5cd7257726e6e3930b569f82b7628e8924",
+  ]
+}
+
+provider "registry.terraform.io/telmate/proxmox" {
+  version     = "3.0.2-rc03"
+  constraints = "3.0.2-rc03"
+  hashes = [
+    "h1:h1HrUaf8F4TF4gOY5ASb/aOhibmiK8BU9H7ei6747TI=",
+    "zh:1307001003c397f1e02eadcfc6a220840575cf1630472b5bdcd5f8b2df4a8ad4",
+    "zh:291290ca25becd1a05d11e5a0435786cb588926bfa86e0b7fe1c02f24948c55f",
+    "zh:30a56bd31cb7cf407974f1e719065c71265e637e600cf6b7fb0cf37648ffee26",
+    "zh:3968fe4ef438c676be4cac944cd38a1a8eb3114402e78e8a32c3295c4c396603",
+    "zh:468999a24794eca3c2ffb290ed445db7fc8055be67327d31389d59bac9550082",
+    "zh:696910c43f5b1d61eec8f4bd529acb2a17d00e820800ea0f7c2f4aeedcac7b64",
+    "zh:8007ca4ee20af5c433bc2d89d6d13793d250f465981c7ac050190510ad882678",
+    "zh:8e14e0a723dfb9dab4aade28f2ca916d780ba71917d21432cd7146f0c16402d3",
+    "zh:9f228d9afa38196fbafd742115c41df5afaf81f2e688dbbee49bf93bbc08543a",
+    "zh:c7b89242ec2f78e2b8e8315918d353f81b64a4a91c80295a86c05bf4dc6da03a",
+    "zh:ca28e199792c83b111e05f145ade628eb1efadae4be0754326bb71b8cd95aba4",
+    "zh:d408185a65992828b38f8a0fd7868b921e30513161b7dc5eb43cc78087d69cf1",
+    "zh:e3f242a7fd403738b6e30112ecd758cd8c08cae15cb9a1597e975080b48b722a",
+    "zh:f94773757796df7f7db9781d482b08e1736df60d86270a8b7ebe94492d00c398",
+  ]
+}

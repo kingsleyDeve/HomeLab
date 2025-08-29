@@ -1,0 +1,36 @@
+---
+# Préparation sur TOUS les nœuds
+- hosts: control_plane,workers
+  gather_facts: yes
+  roles:
+    - prereq
+    
+
+# Init du 1er master
+- hosts: control_plane[0]
+  become: true
+  roles:
+    - control_plane
+  vars_files:
+    - secret.yml
+
+
+# Join des autres control-planes 
+- hosts: control_plane[1:]
+  become: true
+  roles:
+    - role: node
+  vars_files:
+    - secret.yml
+  vars:
+    k3s_server_url: "https://192.168.10.90:6443"
+      
+# Join des workers
+- hosts: workers
+  become: true
+  roles:
+    - worker
+  vars_files:
+    - secret.yml
+  vars:
+    k3s_server_url: "https://192.168.10.90:6443"
